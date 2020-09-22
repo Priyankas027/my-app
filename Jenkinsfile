@@ -1,5 +1,5 @@
 pipeline {
-  
+  node('master') {
     stages {
         stage('---clean---') {
             steps {
@@ -14,6 +14,7 @@ pipeline {
         stage('--package--') {
             steps {
                 sh "mvn package"
+            }
             }
         }
     }
