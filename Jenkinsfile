@@ -16,5 +16,10 @@ pipeline {
             
             }
         }
+       stage('--sample stage--') {
+            steps {
+                sh "df -h"
+      
+            }}
     }
 }
