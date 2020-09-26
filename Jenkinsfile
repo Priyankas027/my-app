@@ -1,7 +1,10 @@
 pipeline {
 
-  agent any 
-    
+  agent any
+  
+    options {
+        timeout(time: 10, unit: 'SECONDS')
+    }
     stages {
         stage('---clean---') {
             steps {
