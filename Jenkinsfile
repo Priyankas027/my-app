@@ -18,7 +18,7 @@ pipeline {
             
             }
         }
-       stage('--Demo--') {
+       stage('--Demo stage--') {
             steps {
                 sh "ps -ef"
       
